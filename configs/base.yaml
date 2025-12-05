@@ -1,0 +1,11 @@
+serial:
+  port: "COM3"
+  baud: 115200
+inference:
+  window: 30
+  model_path: "models/model_obd_iforest.pkl"
+  contamination: 0.02
+features:
+  use_cols: ["rpm", "speed", "coolant_temp", "tps", "maf", "map"]
+plot:
+  temp_limit_c: 100
